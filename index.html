@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+       <script src="script.js"></script>
+      </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-12" >
+                <div class="alert bg-primary text-white"><h4>Chat ESSAT V1.0</h4></div>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding-right: 25px;">
+                <div class="alert" id="af1" style="background-color: aliceblue;display: block;">
+                    <label>Connexion</label>
+                    <br><br/>
+                    <input type="email" placeholder="Votre email" id="em"style="width: 90%;"><br><br>
+                    <input type="password" placeholder="votre password" id="pas" style="width: 90%;"><br><br>
+                    <input type="button" value="Connexion" class="btn btn-primary" onclick="connect()" style="width:90%">
+
+                </div>
+                 <div class="alert" id="af2" style="background-color: aliceblue;display: block;">
+                    <label>inscription</label>
+                 <br><br/>
+                    <input type="text" placeholder="Votre nom" id="nom" style="width: 90%;"><br><br>
+                    <input type="email" placeholder="Votre email" id="email"style="width: 90%;"><br><br>
+                    <input type="password" placeholder="Votre password"  id ="pass" style="width: 90%;"><br><br>
+                  <input type="button" value="Inscription" class="btn btn-primary" onclick="ajouter()" style="width: 90%;">
+                  <!--  <button type="password" class="btn btn-primary" onclick="ajouter()" >Inscription</button>-->
+
+                </div>
+                <div  class="alert" id="af3" style="display: none;background-color: aliceblue;">
+                    
+                
+                </div>
+                
+
+            </div>
+            <div class="col-md-9">
+                <div class="row" style="padding-bottom: 10px ;">
+                        <input type="text" placeholder="Votre message" id="in1" disabled="true" style="background-color:aliceblue;border-style: none;width:70%;height: 35px;"><button id="in2" class="btn btn-warning text-black"  disabled="true" onclick="postMess()" style="width: 18%;margin-left: 25px;">Envoie Message</button> 
+                    </div>
+                <div class="row" style="padding-right: 10px;">
+                    <div class="col-md-12" style="background-color: aliceblue;">
+                        <ul id="lis">
+                            <li>email>contenu</li>
+                            <li>email>contenu</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+     
+    </body>
+</html>
